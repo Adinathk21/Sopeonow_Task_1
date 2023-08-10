@@ -1,0 +1,135 @@
+
+  @media (min-width: 1200px)and  (max-width: 1400px) 
+   { 
+
+    .Patientid{
+       width: 15rem;
+    }
+  .lgi{
+    background-color:#FFF6EF;
+  }
+    #pid{position: relative;left: 100px;}
+  #vid, #wrad{position: relative;left: 130px;}
+  #bed{position: relative; left:200px}
+  #payor{position: relative; left: 250px; }
+  
+  .bed{
+    width: 23rem; 
+  }
+  .journey2{
+    position: relative;
+    left: 120px;  
+    top: 10px;
+  }
+   
+  .journey{position: relative;
+    top: 10px;
+  }
+   }
+        @media (min-width: 900px) and  (max-width: 1200px)
+    {
+        .Patientid{
+            width: 12rem;
+         }
+
+         #pid{position: relative;left: 70px;}
+       #vid, #wrad{position: relative;left: 90px;}
+
+       .bed{
+        width: 18rem; 
+      }
+       #bed{position: relative; left:150px}
+       #payor{position: relative; left: 200px; }
+       
+       .journey2{
+         position: relative;
+         left: 50px;  
+         top: 10px;
+       }
+       .journey{position: relative;
+         top: 10px;
+       }
+       .timeline_title{
+        height: 60px;width: fit-content;
+        position: relative;
+        left: 70px;
+       }
+       .timeline_time{
+        margin-left: 40px;
+       }
+    }
+    @media (min-width: 768px) and (max-width: 900px)
+    { 
+        .Patientid{
+            width: 10rem;
+          }
+          #pid{position: relative;left: 30px;}
+       #vid, #wrad{position: relative;left: 50px;}
+       .bed{
+        width: 15rem; 
+      }
+       #bed{position: relative; left:100px}
+       #payor{position: relative; left: 150px; }
+
+       .journey2{
+        position: relative;
+        left: 10px;  
+        top: 10px;
+      }
+      .journey{position: relative;
+        top: 10px;
+      }
+      .timeline_title{
+        width: fit-content;
+        position: relative;
+        left: 30px;
+       }
+       .timeline_time{
+        margin-left: 5px;
+       }
+
+    }
+    @media (min-width: 576px) and (max-width: 768px)
+    {
+      .Patientid{
+        margin: 10px 0px 0px 60px ;
+
+        width: 15rem;
+      }
+      #pid{position: relative;left: 120px;}
+   #vid {position: relative;left: 140px; }
+   #wrad{position: relative;left: 150px; }
+   .bed{
+    width: 15rem; margin: 5px  0px 0px 60px ;
+  }
+   #bed{position: relative; left: 100px; }
+   #payor{position: relative; left: 150px; }
+
+   .journey2{
+    position: relative;
+    left: 10px;  
+    top: 15px;
+    font-size: 15px;
+  }
+  .journey{position: relative;
+    top: 10px;
+  }
+  .cbody{
+    font-family: Roboto;
+    font-size: 20px;
+    
+    }
+  .timeline_title{
+    width: fit-content;
+    position: relative;
+    left: 1px;
+   }
+   .timeline_time{
+    margin-left: 6px;
+   }
+   
+    }
+
+
+
+   

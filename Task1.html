@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart2</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <style>
+      h4{
+        background-color: #F9A3A4;
+      }
+    </style>
+</head>
+<body>
+  
+  <h4>Discharge Now</h4>
+
+<div id="chart">
+</div>
+    
+
+    <script>
+   var options = {
+
+    colors: ['#F9A3A4', '#546E7A'],
+
+          series: [{
+          name: 'Discharges by Interval',
+          type: 'column',         
+          data: [0,1,16,11,5,2,0,0,0,0],
+        }, 
+               
+        {
+          name: 'Avg Time',
+          type: 'line',
+          data: [0,2.18,2.57,2.32,1.45,0,0,0,0,0,],
+        }],
+        
+        chart: {
+          height: 400,
+          type: 'line',
+          
+        },
+
+        stroke: {
+          width: [0,3]
+        },
+
+        dataLabels: {
+          enabled: true,
+          enabledOnSeries: [0,1],       
+        },
+        xaxis: {
+         categories: ["12AM-06AM" ,"06AM-08AM","08AM-10AM","10AM-12PM","12PM-02PM","02PM-04PM","04PM-06PM", "06PM-08PM","08PM-10PM","10PM-12PM"]
+        },
+        yaxis: [{
+          y:5.5,
+          borderColor:"#00E396",
+          
+    },
+         {
+          opposite:true,
+          title:{text:"Y Axis"},
+        }]
+        // annotations:
+        // {
+        //  yaxis: 
+        //  [ 
+        //     {
+        //         y:6.5,
+        //         borderColor:"#00E396",
+        //         lable: {title:{text:"Y Axis"},
+        //             borderColor:"#00E396", 
+        //             style: {
+        //                 color:"#fff",
+        //                 background:"#00E396"
+        //             }, 
+        //         },
+        //     },         
+        //  ]
+        // }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    </script>
+</body>
+</html>
